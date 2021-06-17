@@ -1,2 +1,2 @@
 # Hackerrank-practice-python
-Contains all the practice codes in hackerrank 
+Contains all the python practice codes in hackerrank 
