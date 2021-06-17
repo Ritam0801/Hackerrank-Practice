@@ -1,0 +1,52 @@
+"""
+PROBLEM STATEMENT :
+
+
+Given the participants's score sheet for your University Sports Day, you are required to find the runner-up score. 
+You are given scores. Store them in a list and find the score of the runner-up.
+
+Note : This is in reference to Python 3
+Input Format :
+
+The first line contains n. The second line contains an array A[] of n integers each separated by a space.
+
+Constraints :
+
+2 <= n <= 10
+-100 <= A[i] <= 100
+
+Output Format n :
+
+Print the runner-up score.
+
+Sample Input
+
+5
+2 3 6 6 5
+
+Sample Output
+
+5
+
+SOLUTION :
+1st line: n = int(input()) 
+          This takes input from command line. 
+          Please note that input type is going to be in string format and we have to use int() to convert from string to int
+
+2nd line: arr = map(int, input().split()) 
+          Now, we are are mapping input(text) to int.
+
+3rd line: arr = list(set(list(arr))) 
+          here we are convert array to list and getting its set and then converting to list.
+
+Others: We are sorting the list by using sorted and getting second last element.
+
+"""
+
+if __name__=="__main__":
+    n = int(input())
+    arr = map(int, input().split())
+    arr = list(set(list(arr)))
+    ar = len(arr)
+    arr = sorted(arr)
+    print(arr[ar-2])
